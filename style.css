@@ -1,0 +1,100 @@
+body {
+    background: url("img/white-gridius.png");
+    font-family: "Georgia", serif;
+}
+
+.header {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(122, 112, 97);
+    text-align: center;
+    text-shadow: 1px 2px 2px rgb(92, 86, 86);
+}
+
+.big-photo {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    border: 10px solid rgb(131, 143, 137);
+    box-shadow: 0 0 30px 2px;
+}
+
+ul.filter-controls {
+    background-color: rgb(48, 47, 47);
+    list-style: none;
+    padding-top: 38px;
+    padding-bottom: 35px;
+}
+
+ul.filter-controls li {
+    position: relative;
+    display: inline;
+    margin-right: 80px;
+    padding-left: 3.8px;
+}
+
+ul.filter-controls img {
+    width: 15%;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    margin: 10% auto;
+    color: wheat;
+}
+
+.active {
+    border: 4px solid rgb(248, 244, 244);
+    box-sizing: border-box;
+}
+
+.default-hover:hover {
+    filter: opacity(0.7);
+    cursor: pointer;
+}
+
+.walden-filter {
+    filter: contrast(0.9) brightness(1) hue-rotate(-20deg) saturate(1.7) sepia(0.4);
+}
+
+.walden-hover:hover {
+    filter: contrast(0.9) brightness(1) hue-rotate(-20deg) saturate(1.7) sepia(0.4) opacity(0.7);
+    cursor: pointer;
+}
+
+.toaster-filter {
+    filter: saturate(2.5) hue-rotate(-30deg) contrast(0.67) sepia(0.4);
+}
+
+.toaster-hover:hover {
+    filter: saturate(2.5) hue-rotate(-30deg) contrast(0.67) sepia(0.4) opacity(0.7);
+    cursor: pointer;
+}
+
+.kelvin-filter {
+    filter: contrast(1.1) brightness(1) saturate(3.4) sepia(0.4);
+}
+
+.kelvin-hover:hover {
+    filter: contrast(1.1) brightness(1) saturate(3.4) sepia(0.4) opacity(0.7);
+    cursor: pointer;
+}
+
+.oldie-filter {
+    filter: saturate(0.02) contrast(0.85) brightness(1.2) sepia(0.02);
+}
+
+.oldie-hover:hover {
+    filter: saturate(0.02) contrast(0.85) brightness(1.2) sepia(0.02) opacity(0.7);
+    cursor: pointer;
+}
+
+.footer {
+    float: right;
+    padding-top: 10px;
+}
